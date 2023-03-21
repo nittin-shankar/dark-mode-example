@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+      }
+    </script>
+  </head>
+
+  <body>
+    <div onclick="changeMode()" class="flex h-screen items-center cursor-pointer bg-gray-200 dark:bg-black">
+      <div class="mx-auto max-w-lg text-black dark:text-white">
+        <h3 class="text-4xl">
+          The page is now in 
+          <span class="inline dark:hidden underline">light mode</span>
+          <span class="hidden dark:inline underline">dark mode</span>
+        </h3>
+
+        <p class="mt-12 text-center">Click anywhere to change mode</p>
+      </div>
+    </div> 
+
+    <script src="support-dark-mode.js"></script>
+  </body>
+</html>
